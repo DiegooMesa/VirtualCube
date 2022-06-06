@@ -20,6 +20,7 @@ class cubes_face():
         self.face = np.array([[a, b, c], [d, e, f], [g, h, i]])
         print("New face configuration for: " + self.color)
         print(self.face)
+        return (np.array([[a,b,c], [d,e,f], [g,h,i]]))
     
 
 
