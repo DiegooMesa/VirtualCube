@@ -158,7 +158,7 @@ def sideMove(vector):
         confReplacement(vector, newConfvector)
         
         cubo.CV = vector
-
+        
 def upperMove(vector):
     if cubo.CV == 0:
         cubo.CV = vector
@@ -199,11 +199,14 @@ def upperMove(vector):
         newConfLeft = (frntmov, leftConf[1], leftConf[2])
         newConfLeft = np.array(newConfLeft)
         
+        
         newConfBack = (lftmov, backConf[1], backConf[2])
         newConfBack = np.array(newConfBack)
         
+        
         newConfRight = (backmov, rightConf[1], rightConf[2])
         newConfRight = np.array(newConfRight)
+        
         
         newConfFront = (rghtmov, vectorConf[1], vectorConf[2])
         newConfFront = np.array(newConfFront)
@@ -262,7 +265,7 @@ def downMove(vector):
         
         newConfLeft = (leftConf[0], leftConf[1], backmov)
         newConfLeft = np.array(newConfLeft)
-
+        
         newConfFront = (vectorConf[0], vectorConf[1], lftmov)
         newConfFront = np.array(newConfFront)
     
@@ -273,6 +276,7 @@ def downMove(vector):
         confReplacement(vector, newConfFront)
         confReplacement(backFace, newConfBack) 
 
+        cubo.CV = vector
 
 ### CUBE MANIPULATION ###
 

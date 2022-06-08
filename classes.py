@@ -22,8 +22,6 @@ class cubes_face():
         print(self.face)
         return (np.array([[a,b,c], [d,e,f], [g,h,i]]))
     
-
-
     def schema(self, frame, X, Y, upLeft, up, upRight, left, center, right, downLeft, down, downRight):
         array = self.face
         if func.color_reader(center[0], center[1]) == self.color:
