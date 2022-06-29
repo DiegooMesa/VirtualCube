@@ -61,40 +61,52 @@ def window_show():
             break
         elif key == 108:
             cube.L()
+            print("L")
         elif key == 107:
             cube.L_()
+            print("L'")
         elif key == 114:
             cube.R()
+            print("R")
         elif key == 116:
             cube.R_()
+            print("R'")
         elif key == 117:
             cube.U()
+            print("U")
         elif key == 121:
             cube.U_()
+            print("U'")
         elif key == 100:
             cube.D()
+            print("D")
         elif key == 115:
             cube.D_()
+            print("D'")
         elif key == 98:
             cube.B()
+            print("B")
         elif key == 118:
             cube.B_()
+            print("B'")
         elif key == 102:
             cube.F()
+            print("F")
         elif key == 103:
             cube.F_()
+            print("F'")
         elif key == 49:
             cubo.frontFace = [0,0,-1]
-            print(cubo.frontFace)
+            print("Front face changed to green")
         elif key == 50:
             cubo.frontFace = [1,0,0]
-            print(cubo.frontFace)
+            print("Front face changed to red")
         elif key == 51:
             cubo.frontFace = [0,0,1]
-            print(cubo.frontFace)
+            print("Front face changed to blue")
         elif key == 52:
             cubo.frontFace = [-1,0,0]
-            print(cubo.frontFace)
+            print("Front face changed to orange")
         
 
     cv2.destroyAllWindows()
